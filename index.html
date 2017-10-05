@@ -13,7 +13,7 @@ body, html {
 .bgimg {
     background-position: center;
     background-size: cover;
-    background-image: url("opcion1.png");
+    background-image: url("img/background.png");
     min-height: 75%;
 }
 .menu {
@@ -79,10 +79,10 @@ body, html {
 
 <!-- Footer -->
 <footer class="w3-center w3-light-grey w3-padding-48 w3-large">
-<a href="https://www.acamica.com" target="_blank" class="w3-hover-text-green">Acámica</a>
+<a href="https://www.acamica.com" target="_blank" class="w3-hover-text-green"><img src="img/logo.png" style="max-width:150px"></a>
 </footer>
 <script>
-function addVideos(){
+window.onload = function(){
   var myvid = document.getElementById('myvideo');
   var myvids = [
   "videos/1.mp4", 
@@ -101,7 +101,7 @@ function addVideos(){
     myvid.src = myvids[activeVideo];
     myvid.play();
   });
-}
+};
 
 </script>
 
