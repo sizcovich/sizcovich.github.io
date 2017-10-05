@@ -1,95 +1,217 @@
 <!DOCTYPE html>
-<html lang="es">
-<head>
-<title>Cómo hacer una increíble cerveza</title>
-<meta charset="utf-8">
-<link rel="stylesheet" href="css/reset.css" type="text/css" media="all">
-<link rel="stylesheet" href="css/style.css" type="text/css" media="all">
-<script type="text/javascript" src="js/jquery-1.4.2.min.js"></script>
-<script type="text/javascript" src="js/cufon-yui.js"></script>
-<script type="text/javascript" src="js/cufon-replace.js"></script>
-<script type="text/javascript" src="js/OrigGarmnd_BT_400.font.js"></script>
-</head>
-<body id="page4">
-<div class="body-bg wrap">
-   <!-- header -->
-   <header>
-      <div class="container">
-         <h1><a href="index.html">Cervecería Acámica</a></h1>
-         <div class="indent" style="height: 40px; width: 900px;">
-            <p><strong>Cervecería Acámica</strong> es una cervecería con años de historia. Desde el primer contacto con la boca hasta el último sorbo, la cerveza Acámica expone su superioridad.</p>
-         </div>
-      </div>
-   </header>
-   <!-- content -->
-   <section id="content">
-      <div class="container">
-         <div class="inside">
-            <h2>Ingredientes</h2>
-               <div class="box">
-               <div class="left-top-corner">
-                  <div class="right-top-corner">
-                     <div class="border-top"></div>
-                  </div>
-               </div>
-               <div class="xcontent">
-                  <div class="border-left">
-                     <div class="border-right">
-                        <div class="inner1" style="height: 115px;">
-                           <div class="img-box alt"><img src="images/icon1.png"><img src="images/icon3.png" class="fright">
-                              <div class="indent alignleft"> 
-                                 <ul style="list-style-type:disc">
-                                 <li>30L de agua declorada</li>
-                                 <li>4,5K de malta de cebada</li>
-                                 <li>25g de lúpulo</li>
-                                 <li>Un sobre de levadura para cerveza</li>
-                                 <li>Azúcar</li>
-                                 </ul>
-                              </div>
-                           </div>
-                        </div>
-                     </div>
-                  </div>
-               </div>
-               <div class="left-bot-corner">
-                  <div class="right-bot-corner">
-                     <div class="border-bot"></div>
-                  </div>
-               </div>
-            </div>
-            <div class="box">
-               <div class="left-top-corner">
-                  <div class="right-top-corner">
-                     <div class="border-top"></div>
-                  </div>
-               </div>
-               <div class="xcontent">
-                  <div class="border-left">
-                     <div class="border-right">
-                        <div class="inner1">
-                           <video class="center" src="videos/1.mp4" id="myvideo" width="640" height="533,33" controls style="background:black">
-                           </video>
-                        </div>
-                     </div>
-                  </div>
-               </div>
-               <div class="left-bot-corner">
-                  <div class="right-bot-corner">
-                     <div class="border-bot"></div>
-                  </div>
-               </div>
-            </div>
-         </div>
-      </div>
-   </section>
+<html>
+<title>Birra Lab</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inconsolata">
+<style>
+body, html {
+    height: 100%;
+    font-family: "Inconsolata", sans-serif;
+}
+.bgimg {
+    background-position: center;
+    background-size: cover;
+    background-image: url("opcion1.png");
+    min-height: 75%;
+}
+.menu {
+    display: none;
+}
+</style>
+<body>
+
+<!-- Links (sit on top) -->
+<div class="w3-top">
+  <div class="w3-row w3-padding w3-black">
+    <div class="w3-col s3">
+      <a href="#" class="w3-button w3-block w3-black">INICIO</a>
+    </div>
+    <div class="w3-col s3">
+      <a href="#about" class="w3-button w3-block w3-black">INGREDIENTES</a>
+    </div>
+<!--     <div class="w3-col s3">
+      <a href="#menu" class="w3-button w3-block w3-black">INGREDIENTES</a>
+    </div> -->
+    <div class="w3-col s3">
+      <a href="#where" class="w3-button w3-block w3-black">INSTRUCCIONES</a>
+    </div>
+  </div>
 </div>
-<!-- footer -->
-<footer>
-   <div class="container">
-      <div class="inside"><a href="http://www.acamica.com/" class="new_window" target="_blank" rel="nofollow">www.acamica.com</a></div>
-   </div>
+
+<!-- Header with image -->
+<header class="bgimg w3-display-container w3-grayscale-min" id="home">
+<!--   <div class="w3-display-bottomleft w3-center w3-padding-large w3-hide-small">
+    <span class="w3-tag">Open from 6am to 5pm</span>
+  </div> -->
+  <div class="w3-display-middle w3-center">
+    <span class="w3-text-black" style="font-size:90px">BIRRA<br>LAB</span>
+  </div>
+<!--   <div class="w3-display-bottomright w3-center w3-padding-large">
+    <span class="w3-text-white">15 Adr street, 5015</span>
+  </div> -->
+</header>
+
+<!-- Add a background color and large text to the whole page -->
+<div class="w3-sand w3-grayscale w3-large">
+
+<!-- About Container -->
+<div class="w3-container" id="about">
+  <div class="w3-content" style="max-width:700px">
+    <h5 class="w3-center w3-padding-64"><span class="w3-tag w3-wide">INGREDIENTES</span></h5>
+    <div class="w3-row w3-center w3-card-2 w3-padding">
+      <h5>Agua decolorada</h5>
+      <p class="w3-text-grey">30 litros</p><br>
+      <h5>Malta de cebada</h5>
+      <p class="w3-text-grey">4.5 kilogramos</p><br>
+      <h5>Lúpulo</h5>
+      <p class="w3-text-grey">25 gramos</p><br>
+      <h5>Levadura</h5>
+      <p class="w3-text-grey">un sobre</p><br>
+      <h5>Azúcar</h5>
+      <p class="w3-text-grey">una cucharada</p><br>
+      </div>
+  </div>
+</div>
+
+<!-- Menu Container -->
+<!-- <div class="w3-container" id="menu">
+  <div class="w3-content" style="max-width:700px">
+ 
+    <h5 class="w3-center w3-padding-48"><span class="w3-tag w3-wide">INGREDIENTES</span></h5>
+  
+    <div class="w3-row w3-center w3-card-2 w3-padding">
+      <a href="javascript:void(0)" onclick="openMenu(event, 'Eat');" id="myLink">
+        <div class="w3-col s6 tablink">Eat</div>
+      </a> -->
+<!--       <a href="javascript:void(0)" onclick="openMenu(event, 'Drinks');">
+        <div class="w3-col s6 tablink">Drink</div>
+      </a> -->
+ <!--    </div>
+
+    <div id="Eat" class="w3-container menu w3-padding-48 w3-card-2">
+      <h5>Bread Basket</h5>
+      <p class="w3-text-grey">Assortment of fresh baked fruit breads and muffins 5.50</p><br>
+    
+      <h5>Honey Almond Granola with Fruits</h5>
+      <p class="w3-text-grey">Natural cereal of honey toasted oats, raisins, almonds and dates 7.00</p><br>
+    
+      <h5>Belgian Waffle</h5>
+      <p class="w3-text-grey">Vanilla flavored batter with malted flour 7.50</p><br>
+    
+      <h5>Scrambled eggs</h5>
+      <p class="w3-text-grey">Scrambled eggs, roasted red pepper and garlic, with green onions 7.50</p><br>
+    
+      <h5>Blueberry Pancakes</h5>
+      <p class="w3-text-grey">With syrup, butter and lots of berries 8.50</p>
+    </div>
+
+    <div id="Drinks" class="w3-container menu w3-padding-48 w3-card-2">
+      <h5>Coffee</h5>
+      <p class="w3-text-grey">Regular coffee 2.50</p><br>
+    
+      <h5>Chocolato</h5>
+      <p class="w3-text-grey">Chocolate espresso with milk 4.50</p><br>
+    
+      <h5>Corretto</h5>
+      <p class="w3-text-grey">Whiskey and coffee 5.00</p><br>
+    
+      <h5>Iced tea</h5>
+      <p class="w3-text-grey">Hot tea, except not hot 3.00</p><br>
+    
+      <h5>Soda</h5>
+      <p class="w3-text-grey">Coke, Sprite, Fanta, etc. 2.50</p>
+    </div>  
+    <img src="/w3images/coffeehouse2.jpg" style="width:100%;max-width:1000px;margin-top:32px;">
+  </div>
+</div> -->
+
+<!-- Contact/Area Container -->
+<div class="w3-container" id="where" style="padding-bottom:32px;">
+  <div class="w3-content" style="max-width:700px">
+    <h5 class="w3-center w3-padding-48"><span class="w3-tag w3-wide">INSTRUCCIONES</span></h5>
+    <video class="w3-sepia" style="width:100%;height:400px;" src="videos/1.mp4" id="myvideo" controls style="background:black"></video>
+    <!-- <p><span class="w3-tag">FYI!</span> We offer full-service catering for any event, large or small. We understand your needs and we will cater the food to satisfy the biggerst criteria of them all, both look and taste.</p>
+    <p><strong>Reserve</strong> a table, ask for today's special or just send us a message:</p> -->
+    <!-- <form action="/action_page.php" target="_blank">
+      <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Name" required name="Name"></p>
+      <p><input class="w3-input w3-padding-16 w3-border" type="number" placeholder="How many people" required name="People"></p>
+      <p><input class="w3-input w3-padding-16 w3-border" type="datetime-local" placeholder="Date and time" required name="date" value="2017-11-16T20:00"></p>
+      <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Message \ Special requirements" required name="Message"></p>
+      <p><button class="w3-button w3-black" type="submit">SEND MESSAGE</button></p>
+    </form>
+  </div> -->
+</div>
+
+<!-- End page content -->
+</div>
+
+<!-- Footer -->
+<footer class="w3-center w3-light-grey w3-padding-48 w3-large">
+  <!-- <p>Powered by  --><a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-text-green">Acámica</a><!-- </p> -->
 </footer>
-<script type="text/javascript"> Cufon.now(); </script>
-<script type="text/javascript" src="js/script.js"></script>
+
+<!-- Add Google Maps -->
+<script>
+function addVideos(){
+  var myvid = document.getElementById('myvideo');
+  var myvids = [
+  "videos/1.mp4", 
+  "videos/2.mp4",
+  "videos/3.mp4",
+  "videos/4.mp4",
+  "videos/5.mp4",
+  "videos/6.mp4"
+  ];
+  var activeVideo = 0;
+  myvid.addEventListener('ended', function(e) {
+    // update the new active video index
+    activeVideo = (++activeVideo) % myvids.length;
+
+    // update the video source and play
+    myvid.src = myvids[activeVideo];
+    myvid.play();
+  });
+}
+
+// function myMap()
+// {
+//   myCenter=new google.maps.LatLng(41.878114, -87.629798);
+//   var mapOptions= {
+//     center:myCenter,
+//     zoom:12, scrollwheel: false, draggable: false,
+//     mapTypeId:google.maps.MapTypeId.ROADMAP
+//   };
+//   var map=new google.maps.Map(document.getElementById("googleMap"),mapOptions);
+
+//   var marker = new google.maps.Marker({
+//     position: myCenter,
+//   });
+//   marker.setMap(map);
+// }
+
+// // Tabbed Menu
+// function openMenu(evt, menuName) {
+//   var i, x, tablinks;
+//   x = document.getElementsByClassName("menu");
+//   for (i = 0; i < x.length; i++) {
+//      x[i].style.display = "none";
+//   }
+//   tablinks = document.getElementsByClassName("tablink");
+//   for (i = 0; i < x.length; i++) {
+//      tablinks[i].className = tablinks[i].className.replace(" w3-dark-grey", "");
+//   }
+//   document.getElementById(menuName).style.display = "block";
+//   evt.currentTarget.firstElementChild.className += " w3-dark-grey";
+// }
+// document.getElementById("myLink").click();
+</script>
+<!-- <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBu-916DdpKAjTmJNIgngS6HL_kDIKU0aU&callback=myMap"></script> -->
+<!--
+To use this code on your website, get a free API key from Google.
+Read more at: https://www.w3schools.com/graphics/google_maps_basic.asp
+-->
+
 </body>
 </html>
