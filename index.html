@@ -19,6 +19,7 @@ body, html {
 .menu {
     display: none;
 }
+
 </style>
 <body>
 
@@ -71,7 +72,7 @@ body, html {
 <div class="w3-container" id="where" style="padding-bottom:32px;">
   <div class="w3-content" style="max-width:700px">
     <h5 class="w3-center w3-padding-48"><span class="w3-tag w3-wide">INSTRUCCIONES</span></h5>
-    <video class="w3-sepia" style="width:100%;height:400px;" src="videos/1.mp4" id="myvideo" controls style="background:black" onClick()="addVideos()"></video>
+    <video class="w3-sepia" style="width:100%;height:400px;" src="videos/inicio.mp4" id="myvideo" controls style="background:black"></video>
 </div>
 
 <!-- End page content -->
@@ -79,30 +80,24 @@ body, html {
 
 <!-- Footer -->
 <footer class="w3-center w3-light-grey w3-padding-48 w3-large">
-<a href="https://www.acamica.com" target="_blank" class="w3-hover-text-green"><img src="img/logo.png" style="max-width:150px"></a>
+<a href="https://www.acamica.com" target="_blank" class="w3-hover-text-green"><img alt="Logo de Acamica" src="img/logo.png" style="max-width:150px"></a>
 </footer>
+<script src="js/script.js"></script>
 <script>
 window.onload = function(){
-  var myvid = document.getElementById('myvideo');
-  var myvids = [
-  "videos/1.mp4", 
-  "videos/2.mp4",
-  "videos/3.mp4",
-  "videos/4.mp4",
-  "videos/5.mp4",
-  "videos/6.mp4"
-  ];
-  var activeVideo = 0;
-  myvid.addEventListener('ended', function(e) {
-    // update the new active video index
-    activeVideo = (++activeVideo) % myvids.length;
+  play();
+  //----ORDENAR FUNCIONES
+  embotellamiento();
+  hervor();
+  maceracion();
+  enfriado();
+  fermentacion();
+  maduracion();
+  //----FIN
 
-    // update the video source and play
-    myvid.src = myvids[activeVideo];
-    myvid.play();
-  });
-};
-
+  //NO MODIFICAR
+  check();
+}
 </script>
 
 </body>
