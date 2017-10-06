@@ -11,12 +11,11 @@ function addVideos(e){
   if(activeVideo+1 === myvids.length){
     myvid.removeEventListener('ended', addVideos)
   }
-  // update the new active video index
-  activeVideo = (++activeVideo);
-  console.log(myvids[activeVideo])
   // update the video source and play
   myvid.src = myvids[activeVideo];
   myvid.play();
+  // update the new active video index
+  activeVideo = (++activeVideo);
 }
 
 function maceracion(){
