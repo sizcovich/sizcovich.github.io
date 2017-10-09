@@ -18,29 +18,35 @@ function addVideos(e){
   activeVideo = (++activeVideo);
 }
 
-function maceracion(){
+function macerar(){
   myvids.push("videos/maceracion.mp4");
   valid.push(1);
+  appendInstruction("Macerar ");
 }
-function hervor(){
+function hervir(){ 
   myvids.push("videos/hervor.mp4");
   valid.push(2);
+  appendInstruction("Hervir ");
 }
-function enfriado(){
+function enfriar(){
   myvids.push("videos/enfriado.mp4");
   valid.push(3);
+  appendInstruction("Enfriar ");
 }
-function fermentacion(){
+function fermentar(){
   myvids.push("videos/fermentacion.mp4");
   valid.push(4);
+  appendInstruction("Fermentar ");
 }
-function maduracion(){
+function madurar(){
   myvids.push("videos/maduracion.mp4");
   valid.push(5);
+  appendInstruction("Madurar ");
 }
-function embotellamiento(){
+function embotellar(){
   myvids.push("videos/embotellamiento.mp4");
   valid.push(6);
+  appendInstruction("Embotellar ");
 }
 
 function check(){
@@ -50,5 +56,12 @@ function check(){
       break;
     }
   }
+}
+
+function appendInstruction(text) {
+    var node = document.createElement("LI");
+    var textnode = document.createTextNode(text);
+    node.appendChild(textnode);
+    document.getElementById("pasoAPaso").appendChild(node);
 }
 
