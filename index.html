@@ -22,15 +22,6 @@ body, html {
     display: none;
 }
 
-/*ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-}
-
-li {
-    display: inline;
-}*/
 ul
 {
 margin: 0;
@@ -39,12 +30,15 @@ list-style-type: none;
 text-align: center;
 }
 
-ul li { display: inline; }
+ul li { 
+  margin-right:20px;
+  display: inline; 
+}
 
 ul li a
 {
 text-decoration: none;
-padding: .2em 1em;
+padding: .5em 2em;
 color: #fff;
 background-color: #036;
 }
@@ -124,10 +118,10 @@ background-color: #369;
 window.onload = function(){
 
   //----FUNCIONES A ORDENAR
+  madurar();
   fermentar();
   embotellar();
   hervir();
-  madurar();
   enfriar();
   macerar();
   //----FIN DE FUNCIONES A ORDENAR
