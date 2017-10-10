@@ -1,136 +1,122 @@
 <!DOCTYPE html>
 <html>
-<head>
-<title>Birra Lab</title>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inconsolata">
-<!-- Estilado -->
-<style>
-body, html {
+  <head>
+    <title>Birra Lab</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type=text/css href="css/estilo.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inconsolata">
+    <!-- Estilado -->
+    <style>
+    body, html {
     height: 100%;
     font-family: "Inconsolata", sans-serif;
-}
-.bgimg {
+    }
+    .bgimg {
     background-position: center;
     background-size: cover;
     background-image: url("img/background.jpg");
     min-height: 100%;
-}
-.menu {
+    }
+    .menu {
     display: none;
-}
-
-ul
-{
-margin: 0;
-padding: 0;
-list-style-type: none;
-text-align: center;
-}
-
-ul li { 
-  margin-right:20px;
-  display: inline; 
-}
-
-ul li a
-{
-text-decoration: none;
-padding: .5em 2em;
-color: #fff;
-background-color: #036;
-}
-
-ul li a:hover
-{
-color: #fff;
-background-color: #369;
-}
-
-</style>
-</head>
-<body>
-
-<!-- Links -->
-<div class="w3-top">
-  <div class="w3-row w3-padding w3-black">
-    <div class="w3-col s3">
-      <a href="#" class="w3-button w3-block w3-black">INICIO</a>
-    </div>
-    <div class="w3-col s3">
-      <a href="#ingredientes" class="w3-button w3-block w3-black">INGREDIENTES</a>
-    </div>
-    <div class="w3-col s3">
-      <a href="#instrucciones" class="w3-button w3-block w3-black">INSTRUCCIONES</a>
-    </div>
-    <div class="w3-col s3"><a href="https://www.acamica.com" class="w3-button w3-block w3-black">ACAMICA</a></div>
-  </div>
-</div>
-
-<!-- Encabezado con imagen de fondo -->
-<header class="bgimg w3-display-container w3-grayscale-min" id="home">
-  <div class="w3-display-right w3-center" style="width:60%">
-    <span class="w3-text-white" style="font-size:90px">BIRRALAB<br></span>
-    <span class="w3-text-white">Tu fábrica de cerveza virtual</span>
-  </div>
-</header>
-
-<!-- Color de fondo y texto -->
-<div class="w3-sand w3-grayscale w3-large">
-
-<!-- Ingredientes -->
-<div class="w3-container" id="ingredientes">
-  <div class="w3-content" style="max-width:700px">
-    <h5 class="w3-center w3-padding-64"><span class="w3-tag w3-wide">INGREDIENTES</span></h5>
-    <div class="w3-row w3-center w3-card-2 w3-padding">
-      <h5>Agua decolorada</h5>
-      <p class="w3-text-grey">30 litros</p><br>
-      <h5>Malta de cebada</h5>
-      <p class="w3-text-grey">4.5 kilogramos</p><br>
-      <h5>Lúpulo</h5>
-      <p class="w3-text-grey">25 gramos</p><br>
-      <h5>Levadura</h5>
-      <p class="w3-text-grey">un sobre</p><br>
-      <h5>Azúcar</h5>
-      <p class="w3-text-grey">una cucharada</p><br>
+    }
+    ul
+    {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    text-align: center;
+    }
+    ul li {
+    margin-right:20px;
+    display: inline;
+    }
+    ul li a
+    {
+    text-decoration: none;
+    padding: .5em 2em;
+    color: #fff;
+    background-color: #036;
+    }
+    ul li a:hover
+    {
+    color: #fff;
+    background-color: #369;
+    }
+    </style>
+  </head>
+  <body>
+    <!-- Links -->
+    <div class="fijar-navegacion">
+      <div class="fila padding color-negro">
+        <div class="columna s3">
+          <a href="#" class="boton bloque color-negro">INICIO</a>
+        </div>
+        <div class="columna s3">
+          <a href="#ingredientes" class="boton bloque color-negro">INGREDIENTES</a>
+        </div>
+        <div class="columna s3">
+          <a href="#instrucciones" class="boton bloque color-negro">INSTRUCCIONES</a>
+        </div>
+        <div class="columna s3"><a href="https://www.acamica.com" class="boton bloque color-negro">ACAMICA</a></div>
       </div>
+    </div>
+    <!-- Encabezado con imagen de fondo -->
+    <header class="bgimg container escala-grises-50" id="home">
+      <div class="alinear-derecha centrar" style="width:60%">
+        <span class="color-blanco" style="font-size:90px">BIRRALAB<br></span>
+        <span class="color-blanco">Tu fábrica de cerveza virtual</span>
+      </div>
+    </header>
+    <!-- Color de fondo y texto -->
+    <div class="color-arena escala-grises-75">
+      <!-- Ingredientes -->
+      <div class="container" id="ingredientes">
+        <div class="contenido" style="max-width:700px">
+          <h5 class="centrar padding-64"><span class="tag espacio-letras">INGREDIENTES</span></h5>
+          <div class="fila centrar card padding">
+            <h5>Agua decolorada</h5>
+            <p class="color-gris font-size">30 litros</p><br>
+            <h5>Malta de cebada</h5>
+            <p class="color-gris font-size">4.5 kilogramos</p><br>
+            <h5>Lúpulo</h5>
+            <p class="color-gris font-size">25 gramos</p><br>
+            <h5>Levadura</h5>
+            <p class="color-gris font-size">un sobre</p><br>
+            <h5>Azúcar</h5>
+            <p class="color-gris font-size">una cucharada</p><br>
+          </div>
+        </div>
+      </div>
+      <!-- Instrucciones -->
+      <div class="container" id="instrucciones" style="padding-bottom:32px;">
+        <div class="contenido" style="max-width:700px">
+          <h5 class="centrar padding-48"><span class="tag espacio-letras">INSTRUCCIONES</span></h5>
+        <ul id="pasoAPaso" class="font-size"></ul>
+      <video class="sepia" style="width:100%;height:400px;" src="videos/inicio.mp4" id="myvideo" controls style="background:black"></video>
+    </div>
   </div>
 </div>
-
-<!-- Instrucciones -->
-<div class="w3-container" id="instrucciones" style="padding-bottom:32px;">
-  <div class="w3-content" style="max-width:700px">
-    <h5 class="w3-center w3-padding-48"><span class="w3-tag w3-wide">INSTRUCCIONES</span></h5>
-    <ul id="pasoAPaso"></ul>
-    <video class="w3-sepia" style="width:100%;height:400px;" src="videos/inicio.mp4" id="myvideo" controls style="background:black"></video>
-</div>
-
-</div>
-
 <!-- Pie de página -->
-<footer class="w3-center w3-light-grey w3-padding-48 w3-large">
-<a href="https://www.acamica.com" target="_blank" class="w3-hover-text-green"><img alt="Logo de Acamica" src="img/logo.png" style="max-width:150px"></a>
+<footer class="centrar color-gris-claro padding-48">
+  <a href="https://www.acamica.com" target="_blank"><img alt="Logo de Acamica" src="img/logo.png" style="max-width:150px"></a>
 </footer>
 <script src="js/script.js"></script>
 <script>
 window.onload = function(){
-
-  //----FUNCIONES A ORDENAR
-  madurar();
-  fermentar();
-  embotellar();
-  hervir();
-  enfriar();
-  macerar();
-  //----FIN DE FUNCIONES A ORDENAR
-
-  //NO MODIFICAR
-  play();
-  check();
+//----FUNCIONES A ORDENAR
+madurar();
+fermentar();
+embotellar();
+hervir();
+enfriar();
+macerar();
+//----FIN DE FUNCIONES A ORDENAR
+//NO MODIFICAR
+play();
+check();
 }
 </script>
-
 </body>
 </html>
