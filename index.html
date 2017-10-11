@@ -5,46 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type=text/css href="css/estilo.css">
+    <link rel="stylesheet" type=text/css href="css/estilo-principal.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inconsolata">
-    <!-- Estilado -->
-    <style>
-    body, html {
-    height: 100%;
-    font-family: "Inconsolata", sans-serif;
-    }
-    .bgimg {
-    background-position: center;
-    background-size: cover;
-    background-image: url("img/background.jpg");
-    min-height: 100%;
-    }
-    .menu {
-    display: none;
-    }
-    ul
-    {
-    margin: 0;
-    padding: 0;
-    list-style-type: none;
-    text-align: center;
-    }
-    ul li {
-    margin-right:20px;
-    display: inline;
-    }
-    ul li a
-    {
-    text-decoration: none;
-    padding: .5em 2em;
-    color: #fff;
-    background-color: #036;
-    }
-    ul li a:hover
-    {
-    color: #fff;
-    background-color: #369;
-    }
-    </style>
   </head>
   <body>
     <!-- Links -->
@@ -77,15 +39,20 @@
           <h5 class="centrar padding-64"><span class="tag espacio-letras">INGREDIENTES</span></h5>
           <div class="fila centrar card padding">
             <h5>Agua decolorada</h5>
-            <p class="color-gris font-size">30 litros</p><br>
+            <p class="color-gris font-size">30 litros</p>
+            <br>
             <h5>Malta de cebada</h5>
-            <p class="color-gris font-size">4.5 kilogramos</p><br>
+            <p class="color-gris font-size">4.5 kilogramos</p>
+            <br>
             <h5>Lúpulo</h5>
-            <p class="color-gris font-size">25 gramos</p><br>
+            <p class="color-gris font-size">25 gramos</p>
+            <br>
             <h5>Levadura</h5>
-            <p class="color-gris font-size">un sobre</p><br>
+            <p class="color-gris font-size">un sobre</p>
+            <br>
             <h5>Azúcar</h5>
-            <p class="color-gris font-size">una cucharada</p><br>
+            <p class="color-gris font-size">una cucharada</p>
+            <br>
           </div>
         </div>
       </div>
@@ -93,30 +60,30 @@
       <div class="container" id="instrucciones" style="padding-bottom:32px;">
         <div class="contenido" style="max-width:700px">
           <h5 class="centrar padding-48"><span class="tag espacio-letras">INSTRUCCIONES</span></h5>
-        <ul id="pasoAPaso" class="font-size"></ul>
-      <video class="sepia" style="width:100%;height:400px;" src="videos/inicio.mp4" id="myvideo" controls style="background:black"></video>
+          <ul id="pasoAPaso" class="font-size"></ul>
+          <video class="sepia" style="width:100%;height:400px;" src="videos/inicio.mp4" id="myvideo" controls style="background:black"></video>
+        </div>
+      </div>
     </div>
-  </div>
-</div>
-<!-- Pie de página -->
-<footer class="centrar color-gris-claro padding-48">
-  <a href="https://www.acamica.com" target="_blank"><img alt="Logo de Acamica" src="img/logo.png" style="max-width:150px"></a>
-</footer>
-<script src="js/script.js"></script>
-<script>
-window.onload = function(){
-//----FUNCIONES A ORDENAR
-madurar();
-fermentar();
-embotellar();
-hervir();
-enfriar();
-macerar();
-//----FIN DE FUNCIONES A ORDENAR
-//NO MODIFICAR
-play();
-check();
-}
-</script>
-</body>
+    <!-- Pie de página -->
+    <footer class="centrar color-gris-claro padding-48">
+      <a href="https://www.acamica.com" target="_blank"><img alt="Logo de Acamica" src="img/logo.png" style="max-width:150px"></a>
+    </footer>
+    <script src="js/script.js"></script>
+    <script>
+      window.onload = function(){
+      //----FUNCIONES A ORDENAR
+      madurar();
+      fermentar();
+      embotellar();
+      hervir();
+      enfriar();
+      macerar();
+      //----FIN DE FUNCIONES A ORDENAR
+      //NO MODIFICAR
+      play();
+      check();
+      }
+    </script>
+  </body>
 </html>
